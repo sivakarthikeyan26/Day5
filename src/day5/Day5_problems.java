@@ -5,14 +5,12 @@ import java.util.Scanner;
 public class Day5_problems {
 
 	public static void main(String[] args) {
-		System.out.println("enter the four digit year");
+		System.out.println("enter the number");
 		Scanner sc = new Scanner(System.in);
-		int year = sc.nextInt();
-
-	     if (year % 400 == 0 || (year % 4 == 0 && year % 100 != 0))
-	       System.out.println (year + " is a Leap Year");
-	     else
-	         System.out.println (year + " is not a Leap Year");
+		int n = sc.nextInt();
+		for (int i=1; i<=n; i++) {
+			System.out.println(+Math.pow(2, i));
+		}
 	}
 
 }
