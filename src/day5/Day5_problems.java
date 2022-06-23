@@ -5,16 +5,22 @@ import java.util.Scanner;
 public class Day5_problems {
 
 	public static void main(String[] args) {
-		System.out.println("enter the character");
+		System.out.println("enter three numbers");
 		Scanner sc = new Scanner(System.in);
-		char a = sc.next().charAt(0);
-		if(a=='a' || a=='e' || a=='i' || a=='o' || a=='u' || a=='A' || a=='E' || a=='I' || a=='O' || a=='U') {
-			System.out.println(a+" is vowel");
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+		int c = sc.nextInt();
+		if (a > b) {
+			if (a > c) {
+				System.out.println(a + " is greatest");
+			} else {
+				System.out.println(c + " is greatest");
+			}
+		} else if (b > c) {
+			System.out.println(b + " is greatest");
+		} else {
+			System.out.println(c + " is greatest");
 		}
-		else {
-			System.out.println(a+" is consonant");
-		}
-	}
-		
 	}
 
+}
